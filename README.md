@@ -28,3 +28,13 @@ To achieve these functionalities, we rely on stock info APIs and NLP APIs like O
 
 - **ChatGPT API**
     - [OpenAI API Guide](https://platform.openai.com/docs/guides/gpt)
+
+## Tool Screenshots
+[![Screenshot-2023-09-28-203518.png](https://i.postimg.cc/KvTgCgw9/Screenshot-2023-09-28-203518.png)](https://postimg.cc/56x0Cjxv)
+
+## Sample Output
+{"s":"ok","symbol":["AAPL"],"ask":[170.85],"askSize":[1],"bid":[170.8],"bidSize":[1],"mid":[170.8],"last":[170.8],
+"change":[null],"changepct":[null],"volume":[56284078],"updated":[1695947136]}
+
+## Technical Problems Blocking Output
+N/A
