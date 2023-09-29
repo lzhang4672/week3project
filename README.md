@@ -10,9 +10,10 @@ The proposed application serves as a powerful tool for making informed decisions
 1. **User Input**: Takes a stock ticker as input.
 2. **Data Aggregation**: Scrapes the internet for news articles, forum discussions, and other content.
 3. **Summary**: Generates a comprehensive summary and overview of the queried company.
+4. **Caching**: Temporarily caches scraped data for a while in a database. When user queries for a company or stock, the program will first check if there is already previously cached data so it does not need to re-scrape the same content. Cached data will be deleted after some set period of time to avoid outdated data.
 
 ### Features
-- Summarizes relevant recent news.
+- Summarizes relevant recent news. 
 - Provides technical details sourced from stock info APIs (e.g., market cap, price, etc.).
 
 To achieve these functionalities, we rely on stock info APIs and NLP APIs like OpenAI's ChatGPT.
@@ -28,6 +29,9 @@ To achieve these functionalities, we rely on stock info APIs and NLP APIs like O
 
 - **ChatGPT API**
     - [OpenAI API Guide](https://platform.openai.com/docs/guides/gpt)
+
+- **Database API**
+  - [Java Database Connectivity](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html) (uses SQL, not sure if we want to consider MongoDB)
 
 ## Tool Screenshots
 [![Screenshot-2023-09-28-203518.png](https://i.postimg.cc/KvTgCgw9/Screenshot-2023-09-28-203518.png)](https://postimg.cc/56x0Cjxv)
